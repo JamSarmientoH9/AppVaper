@@ -1,0 +1,62 @@
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+  padding: 20px;
+  background: linear-gradient(to bottom, #000000, #252525, #999999);
+}
+
+h1 {
+  font-size: 24px;
+  color: white;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+}
+
+.input-group {
+  margin-bottom: 20px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+}
+
+.input-group ion-icon {
+  color: white;
+}
+
+.input-group ion-input {
+  color: white;
+}
+
+.options {
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: white;
+}
+
+.options .forgot-password {
+  text-align: right;
+}
+
+.options .forgot-password a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.options .forgot-password a:hover {
+  color: #ddd;
+}
+
+.login-button {
+  --background: white;
+  --color: #333;
+  font-weight: bold;
+}
+
+.login-button:hover {
+  --background: #ddd;
+}

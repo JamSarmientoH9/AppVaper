@@ -1,0 +1,77 @@
+<ion-app>
+  <ion-menu side="start" menuId="first" contentId="main-content">
+    <ion-header>
+      <ion-toolbar color="dark">
+        <ion-title>Menu</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content>
+      <ion-list>
+        <ion-item routerLink="/home">Home</ion-item>
+        <ion-item routerLink="/contact">Contact</ion-item>
+        <ion-item routerLink="/about">About</ion-item>
+        <ion-item routerLink="/shop">Shop</ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+
+  <ion-content id="main-content">
+    <ion-header>
+      <ion-toolbar color="dark">
+        <ion-buttons slot="start">
+          <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+        <ion-title>Vaper Store</ion-title>
+        <ion-buttons slot="end">
+          <ion-icon slot="icon-only" name="cart-outline"></ion-icon>
+          <ion-icon slot="icon-only" name="person-circle-outline"></ion-icon>
+          <ion-icon slot="icon-only" name="settings-outline"></ion-icon>
+        </ion-buttons>
+      </ion-toolbar>
+    </ion-header>
+    <div class="hero">
+      <h1>Vaper</h1>
+      <p>Store</p>
+      <ion-button expand="block" color="danger" shape="round"
+        >Comenzar a comprar</ion-button
+      >
+    </div>
+    <div class="content-container">
+      <div class="filters">
+        <ion-segment value="all">
+          <ion-segment-button value="all">
+            <ion-label>Todos los modelos
+            </ion-label>
+          </ion-segment-button>
+          <ion-segment-button value="women">
+            <ion-label>Modelos unicos</ion-label>
+          </ion-segment-button>
+          <ion-segment-button value="men">
+            <ion-label>Ultima edicion</ion-label>
+          </ion-segment-button>
+          <ion-segment-button value="best-sellers">
+            <ion-label>Mas vendidos</ion-label>
+          </ion-segment-button>
+        </ion-segment>
+        <ion-searchbar placeholder="Search here"></ion-searchbar>
+      </div>
+
+      <div class="products">
+        <ion-card>
+          <img src="path-to-image" alt="Product 1" />
+          <ion-card-content>
+            <h2>White Top</h2>
+            <p>$15</p>
+          </ion-card-content>
+        </ion-card>
+        <ion-card>
+          <img src="path-to-image" alt="Product 2" />
+          <ion-card-content>
+            <h2>Red Dress</h2>
+            <p>$15</p>
+          </ion-card-content>
+        </ion-card>
+      </div>
+    </div>
+  </ion-content>
+</ion-app>

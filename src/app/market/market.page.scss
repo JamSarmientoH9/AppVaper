@@ -1,0 +1,49 @@
+.hero {
+  text-align: center;
+  background: #000;
+  color: #fff;
+  padding: 30px 20px;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+.hero ion-button {
+  margin-top: 20px;
+}
+
+.content-container {
+  padding: 20px;
+}
+
+.filters {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  margin-top: 20px;
+}
+
+ion-card {
+  text-align: center;
+  --background: #fff;
+}
+
+ion-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
