@@ -13,8 +13,8 @@ export class LoginPage {
 
   constructor(private router: Router) {}
   onLogin() {
-    const correctUsername = "testUser";
-    const correctPassword = "testPassword";
+    const correctUsername = "Trabajorandom";
+    const correctPassword = "123456jsd";
 
     if (
       this.username === correctUsername &&

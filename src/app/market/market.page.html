@@ -5,23 +5,13 @@
         <ion-title>Menu</ion-title>
       </ion-toolbar>
     </ion-header>
-    <ion-content>
-      <ion-list>
-        <ion-item routerLink="/home">Home</ion-item>
-        <ion-item routerLink="/contact">Contact</ion-item>
-        <ion-item routerLink="/about">About</ion-item>
-        <ion-item routerLink="/shop">Shop</ion-item>
-      </ion-list>
-    </ion-content>
   </ion-menu>
 
   <ion-content id="main-content">
     <ion-header>
       <ion-toolbar color="dark">
-        <ion-buttons slot="start">
-          <ion-menu-button></ion-menu-button>
-        </ion-buttons>
-        <ion-title>Vaper Store</ion-title>
+        <ion-buttons slot="start"> </ion-buttons>
+        <ion-title>Air Vape</ion-title>
         <ion-buttons slot="end">
           <ion-icon slot="icon-only" name="cart-outline"></ion-icon>
           <ion-icon slot="icon-only" name="person-circle-outline"></ion-icon>
@@ -30,42 +20,117 @@
       </ion-toolbar>
     </ion-header>
     <div class="hero">
-      <h1>Vaper</h1>
-      <p>Store</p>
+      <h1>Air Vape</h1>
+      <p>store</p>
     </div>
     <div class="content-container">
       <div class="filters">
-        <ion-segment value="all">
-          <ion-segment-button value="all">
-            <ion-label>Todos los modelos
-            </ion-label>
-          </ion-segment-button>
-          <ion-segment-button value="women">
-            <ion-label>Modelos unicos</ion-label>
-          </ion-segment-button>
-          <ion-segment-button value="men">
-            <ion-label>Ultima edicion</ion-label>
-          </ion-segment-button>
-          <ion-segment-button value="best-sellers">
-            <ion-label>Mas vendidos</ion-label>
-          </ion-segment-button>
-        </ion-segment>
         <ion-searchbar placeholder="Search here"></ion-searchbar>
       </div>
 
       <div class="products">
         <ion-card>
-          <img src="path-to-image" alt="Product 1" />
+          <img src="assets/images/vape1.jpeg" alt="Product 1" />
           <ion-card-content>
-            <h2>White Top</h2>
+            <h2>Vape Model 1</h2>
             <p>$15</p>
+            <ion-button
+              expand="block"
+              color="primary"
+              (click)="buyProduct('Vape Model 1',15)"
+              >Comprar</ion-button
+            >
           </ion-card-content>
         </ion-card>
         <ion-card>
-          <img src="path-to-image" alt="Product 2" />
+          <img src="assets/images/vape2.jpeg" alt="Product 2" />
           <ion-card-content>
-            <h2>Red Dress</h2>
-            <p>$15</p>
+            <h2>Vape Model 2</h2>
+            <p>$20</p>
+            <ion-button
+              expand="block"
+              color="primary"
+              (click)="buyProduct('Vape Model 2', 20)"
+              >Comprar</ion-button
+            >
+          </ion-card-content>
+        </ion-card>
+        <ion-card>
+          <img src="assets/images/vape3.jpeg" alt="Product 3" />
+          <ion-card-content>
+            <h2>Vape Model 3</h2>
+            <p>$25</p>
+            <ion-button
+              expand="block"
+              color="primary"
+              (click)="buyProduct('Vape Model 3', 25)"
+              >Comprar</ion-button
+            >
+          </ion-card-content>
+        </ion-card>
+        <ion-card>
+          <img src="assets/images/vape4.jpeg" alt="Product 4" />
+          <ion-card-content>
+            <h2>Vape Model 4</h2>
+            <p>$30</p>
+            <ion-button
+              expand="block"
+              color="primary"
+              (click)="buyProduct('Vape Model 4', 30)"
+              >Comprar</ion-button
+            >
+          </ion-card-content>
+        </ion-card>
+        <ion-card>
+          <img src="assets/images/vaper5.jpeg" alt="Product 5" />
+          <ion-card-content>
+            <h2>Vape Model 5</h2>
+            <p>$30</p>
+            <ion-button
+              expand="block"
+              color="primary"
+              (click)="buyProduct('Vape Model 5', 30)"
+              >Comprar</ion-button
+            >
+          </ion-card-content>
+        </ion-card>
+        <ion-card>
+          <img src="assets/images/vaper6.jpeg" alt="Product 6" />
+          <ion-card-content>
+            <h2>Vape Model 6</h2>
+            <p>$30</p>
+            <ion-button
+              expand="block"
+              color="primary"
+              (click)="buyProduct('Vape Model 6', 30)"
+              >Comprar</ion-button
+            >
+          </ion-card-content>
+        </ion-card>
+        <ion-card>
+          <img src="assets/images/vaper7.jpeg" alt="Product 7" />
+          <ion-card-content>
+            <h2>Vape Model 7</h2>
+            <p>$30</p>
+            <ion-button
+              expand="block"
+              color="primary"
+              (click)="buyProduct('Vape Model 7', 30)"
+              >Comprar</ion-button
+            >
+          </ion-card-content>
+        </ion-card>
+        <ion-card>
+          <img src="assets/images/vaper8.jpeg" alt="Product 8" />
+          <ion-card-content>
+            <h2>Vape Model 8</h2>
+            <p>$30</p>
+            <ion-button
+              expand="block"
+              color="primary"
+              (click)="buyProduct('Vape Model 8', 30)"
+              >Comprar</ion-button
+            >
           </ion-card-content>
         </ion-card>
       </div>
